@@ -1,0 +1,16 @@
+@keyframes blink {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
+.print-content:after {
+   content: '|';
+   animation: blink 800ms infinite;
+}
+.print-content.end:after {
+     content: '';
+}
